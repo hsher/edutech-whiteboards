@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.scss';
 
+import cursor from './images/cursor.svg';
+
 function App() {
   return (
     <>
@@ -8,7 +10,7 @@ function App() {
         <ul>
           <li>
             <button className="Console-button">
-              <img src="asd" />
+              <img src={cursor} />
 
               <span>
                 CURSOR
@@ -17,8 +19,8 @@ function App() {
 
             <ul>
               <li>
-                <button className="Console-button">
-                  <img src="asd" />
+                <button className="Console-src={cursor}n">
+                  <img src={cursor} />
 
                   <span>
                     PHOTO
@@ -26,7 +28,7 @@ function App() {
                 </button>
 
                 <button className="Console-button">
-                  <img src="asd" />
+                  <img src={cursor} />
 
                   <span>
                     ERASE
@@ -38,7 +40,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src="asd" />
+              <img src={cursor} />
 
               <span>
                 TYPE
@@ -48,7 +50,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src="asd" />
+              <img src={cursor} />
 
               <span>
                 DRAW
@@ -58,7 +60,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src="asd" />
+              <img src={cursor} />
 
               <span>
                 BOARD
