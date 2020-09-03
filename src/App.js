@@ -10,7 +10,7 @@ function App() {
         <ul className="Console-list">
           <li>
             <button className="Console-button">
-              <img src={cursor} />
+              <img src={cursor} alt="" role="presentation" />
 
               <span>
                 CURSOR
@@ -20,7 +20,7 @@ function App() {
             <ul className="Console-subList">
               <li>
                 <button className="Console-button">
-                  <img src={cursor} />
+                  <img src={cursor} alt="" role="presentation" />
 
                   <span>
                     PHOTO
@@ -28,7 +28,7 @@ function App() {
                 </button>
 
                 <button className="Console-button">
-                  <img src={cursor} />
+                  <img src={cursor} alt="" role="presentation" />
 
                   <span>
                     ERASE
@@ -40,7 +40,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src={cursor} />
+              <img src={cursor} alt="" role="presentation" />
 
               <span>
                 TYPE
@@ -50,7 +50,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src={cursor} />
+              <img src={cursor} alt="" role="presentation" />
 
               <span>
                 DRAW
@@ -60,7 +60,7 @@ function App() {
 
           <li>
             <button className="Console-button">
-              <img src={cursor} />
+              <img src={cursor} alt="" role="presentation" />
 
               <span>
                 BOARD
