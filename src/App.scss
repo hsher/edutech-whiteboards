@@ -23,10 +23,16 @@ body {
 
   &-listItem {
     margin: 0 10px;
+    position: relative;
   }
 
   &-subList {
     display: none;
+    left: -10px;
+    list-style: none;
+    padding: 0 0 2px;
+    position: absolute;
+    top: calc(-100% - 114px);
   }
 
   &-button {
@@ -48,8 +54,12 @@ body {
         filter: invert(53%) sepia(90%) saturate(1048%) hue-rotate(180deg) brightness(95%) contrast(92%);
       }
 
-      & + .Console-label {
+      &+ .Console-label {
         color: #41A1EA;
+
+        &+ .Console-subList {
+          display: block;
+        }
       }
     }
 
@@ -71,7 +81,7 @@ body {
     font-size: 11px;
     line-height: 13px;
     letter-spacing: 0.05em;
-    padding: 13px 0 0;
+    padding: 13px 0;
     text-align: center;
     text-transform: uppercase;
   }
