@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="Console">
-        <ul>
+        <ul className="Console-list">
           <li>
             <button className="Console-button">
               <img src={cursor} />
@@ -17,7 +17,7 @@ function App() {
               </span>
             </button>
 
-            <ul>
+            <ul className="Console-subList">
               <li>
                 <button className="Console-src={cursor}n">
                   <img src={cursor} />

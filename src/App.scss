@@ -84,3 +84,17 @@ body {
   font-family: Helvetica;
   word-break: break-word;
 }
+
+.Console {
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+
+  &-list {
+    display: flex;
+  }
+
+  &-subList {
+    display: none;
+  }
+}
