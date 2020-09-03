@@ -14,7 +14,7 @@ function App() {
       <div className="Console">
         <ul className="Console-list">
           <li className="Console-listItem">
-            <button className="Console-button">
+            <button className="Console-button isActive">
               <img
                 className="Console-buttonImage"
                 src={cursor}
