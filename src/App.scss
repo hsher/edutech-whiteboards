@@ -47,6 +47,10 @@ body {
       .Console-buttonImage {
         filter: invert(53%) sepia(90%) saturate(1048%) hue-rotate(180deg) brightness(95%) contrast(92%);
       }
+
+      & + .Console-label {
+        color: #41A1EA;
+      }
     }
 
     &:focus {
@@ -56,5 +60,19 @@ body {
 
   &-buttonImage {
     filter: invert(69%) sepia(2%) saturate(5185%) hue-rotate(170deg) brightness(72%) contrast(85%);
+  }
+
+  &-label {
+    color: #6C8298;
+    display: block;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    padding: 13px 0 0;
+    text-align: center;
+    text-transform: uppercase;
   }
 }

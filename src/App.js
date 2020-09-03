@@ -23,7 +23,7 @@ function App() {
               />
             </button>
 
-            <span>
+            <span className="Console-label">
               CURSOR
             </span>
 
@@ -38,7 +38,7 @@ function App() {
                   />
                 </button>
 
-                <span>
+                <span className="Console-label">
                   PHOTO
                 </span>
 
@@ -51,7 +51,7 @@ function App() {
                   />
                 </button>
 
-                <span>
+                <span className="Console-label">
                   ERASE
                 </span>
               </li>
@@ -68,7 +68,7 @@ function App() {
               />
             </button>
 
-            <span>
+            <span className="Console-label">
               TYPE
             </span>
           </li>
@@ -83,7 +83,7 @@ function App() {
               />
             </button>
 
-            <span>
+            <span className="Console-label">
               DRAW
             </span>
           </li>
@@ -98,7 +98,7 @@ function App() {
               />
             </button>
 
-            <span>
+            <span className="Console-label">
               BOARD
             </span>
           </li>
