@@ -2,6 +2,11 @@ import React from 'react';
 import './App.scss';
 
 import cursor from './images/cursor.svg';
+import type from './images/type.svg';
+import draw from './images/draw.svg';
+import board from './images/board.svg';
+import erase from './images/erase.svg';
+import photo from './images/photo.svg';
 
 function App() {
   return (
@@ -27,7 +32,7 @@ function App() {
                 <button className="Console-button">
                   <img
                     className="Console-buttonImage"
-                    src={cursor}
+                    src={photo}
                     alt=""
                     role="presentation"
                   />
@@ -40,7 +45,7 @@ function App() {
                 <button className="Console-button">
                   <img
                     className="Console-buttonImage"
-                    src={cursor}
+                    src={erase}
                     alt=""
                     role="presentation"
                   />
@@ -57,7 +62,7 @@ function App() {
             <button className="Console-button">
               <img
                 className="Console-buttonImage"
-                src={cursor}
+                src={type}
                 alt=""
                 role="presentation"
               />
@@ -72,7 +77,7 @@ function App() {
             <button className="Console-button">
               <img
                 className="Console-buttonImage"
-                src={cursor}
+                src={draw}
                 alt=""
                 role="presentation"
               />
@@ -87,7 +92,7 @@ function App() {
             <button className="Console-button">
               <img
                 className="Console-buttonImage"
-                src={cursor}
+                src={board}
                 alt=""
                 role="presentation"
               />
