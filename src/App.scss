@@ -34,7 +34,7 @@ body {
     margin: 0;
     padding: 0 0 2px;
     position: absolute;
-    top: calc(-100% - 114px);
+    bottom: 100%;
   }
 
   &-button {
@@ -47,10 +47,22 @@ body {
     height: 70px;
     padding: 0;
     width: 70px;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #606287;
+
 
     &:active,
     &.isActive {
       box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.65), inset 4px 4px 4px rgba(188, 205, 220, 0.8);
+      color: #41A1EA;
+      font-weight: 600;
 
       .Console-buttonImage {
         filter: invert(53%) sepia(90%) saturate(1048%) hue-rotate(180deg) brightness(95%) contrast(92%);
@@ -67,6 +79,10 @@ body {
 
     &:focus {
       outline: none;
+    }
+
+    &--board {
+      margin: 0 0 15px;
     }
   }
 

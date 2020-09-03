@@ -89,7 +89,7 @@ function App() {
           </li>
 
           <li className="Console-listItem">
-            <button className="Console-button">
+            <button className="Console-button isActive">
               <img
                 className="Console-buttonImage"
                 src={board}
@@ -101,6 +101,18 @@ function App() {
             <span className="Console-label">
               BOARD
             </span>
+
+            <ul className="Console-subList">
+              <li className="Console-listItem">
+                <button className="Console-button Console-button--board">
+                  JOHN
+                </button>
+
+                <button className="Console-button Console-button--board">
+                  MAIN
+                </button>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
