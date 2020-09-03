@@ -19,7 +19,7 @@ function App() {
 
             <ul className="Console-subList">
               <li>
-                <button className="Console-src={cursor}n">
+                <button className="Console-button">
                   <img src={cursor} />
 
                   <span>
