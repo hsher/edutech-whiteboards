@@ -93,6 +93,11 @@ body {
 
   &-list {
     display: flex;
+    padding: 0 10px;
+  }
+
+  &-listItem {
+    margin: 0 10px;
   }
 
   &-subList {

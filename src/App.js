@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="Console">
         <ul className="Console-list">
-          <li>
+          <li className="Console-listItem">
             <button className="Console-button">
               <img src={cursor} alt="" role="presentation" />
 
@@ -18,7 +18,7 @@ function App() {
             </button>
 
             <ul className="Console-subList">
-              <li>
+              <li className="Console-listItem">
                 <button className="Console-button">
                   <img src={cursor} alt="" role="presentation" />
 
@@ -38,7 +38,7 @@ function App() {
             </ul>
           </li>
 
-          <li>
+          <li className="Console-listItem">
             <button className="Console-button">
               <img src={cursor} alt="" role="presentation" />
 
@@ -48,7 +48,7 @@ function App() {
             </button>
           </li>
 
-          <li>
+          <li className="Console-listItem">
             <button className="Console-button">
               <img src={cursor} alt="" role="presentation" />
 
@@ -58,7 +58,7 @@ function App() {
             </button>
           </li>
 
-          <li>
+          <li className="Console-listItem">
             <button className="Console-button">
               <img src={cursor} alt="" role="presentation" />
 
