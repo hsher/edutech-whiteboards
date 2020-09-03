@@ -10,62 +10,92 @@ function App() {
         <ul className="Console-list">
           <li className="Console-listItem">
             <button className="Console-button">
-              <img src={cursor} alt="" role="presentation" />
-
-              <span>
-                CURSOR
-              </span>
+              <img
+                className="Console-buttonImage"
+                src={cursor}
+                alt=""
+                role="presentation"
+              />
             </button>
+
+            <span>
+              CURSOR
+            </span>
 
             <ul className="Console-subList">
               <li className="Console-listItem">
                 <button className="Console-button">
-                  <img src={cursor} alt="" role="presentation" />
-
-                  <span>
-                    PHOTO
-                  </span>
+                  <img
+                    className="Console-buttonImage"
+                    src={cursor}
+                    alt=""
+                    role="presentation"
+                  />
                 </button>
+
+                <span>
+                  PHOTO
+                </span>
 
                 <button className="Console-button">
-                  <img src={cursor} alt="" role="presentation" />
-
-                  <span>
-                    ERASE
-                  </span>
+                  <img
+                    className="Console-buttonImage"
+                    src={cursor}
+                    alt=""
+                    role="presentation"
+                  />
                 </button>
+
+                <span>
+                  ERASE
+                </span>
               </li>
             </ul>
           </li>
 
           <li className="Console-listItem">
             <button className="Console-button">
-              <img src={cursor} alt="" role="presentation" />
-
-              <span>
-                TYPE
-              </span>
+              <img
+                className="Console-buttonImage"
+                src={cursor}
+                alt=""
+                role="presentation"
+              />
             </button>
+
+            <span>
+              TYPE
+            </span>
           </li>
 
           <li className="Console-listItem">
             <button className="Console-button">
-              <img src={cursor} alt="" role="presentation" />
-
-              <span>
-                DRAW
-              </span>
+              <img
+                className="Console-buttonImage"
+                src={cursor}
+                alt=""
+                role="presentation"
+              />
             </button>
+
+            <span>
+              DRAW
+            </span>
           </li>
 
           <li className="Console-listItem">
             <button className="Console-button">
-              <img src={cursor} alt="" role="presentation" />
-
-              <span>
-                BOARD
-              </span>
+              <img
+                className="Console-buttonImage"
+                src={cursor}
+                alt=""
+                role="presentation"
+              />
             </button>
+
+            <span>
+              BOARD
+            </span>
           </li>
         </ul>
       </div>
