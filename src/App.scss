@@ -114,6 +114,15 @@ body {
     height: 70px;
     padding: 0;
     width: 70px;
+
+    &:active,
+    &.isActive {
+      box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.65), inset 4px 4px 4px rgba(188, 205, 220, 0.8);
+
+      .Console-buttonImage {
+        filter: invert(53%) sepia(90%) saturate(1048%) hue-rotate(180deg) brightness(95%) contrast(92%);
+      }
+    }
   }
 
   &-buttonImage {
