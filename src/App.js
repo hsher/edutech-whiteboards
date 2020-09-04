@@ -17,7 +17,7 @@ function App() {
           <li className="Console-listItem">
             <button className="Console-button isActive">
               <img
-                className="Console-buttonArrow"
+                className="Console-buttonArrow Console-buttonArrow--mobile"
                 src={buttonArrow}
                 alt=""
                 role="presentation"
@@ -94,6 +94,36 @@ function App() {
 
             <span className="Console-label">
               DRAW
+            </span>
+          </li>
+
+          <li className="Console-listItem Console-listItem--tablet">
+            <button className="Console-button">
+              <img
+                className="Console-buttonImage"
+                src={erase}
+                alt=""
+                role="presentation"
+              />
+            </button>
+
+            <span className="Console-label">
+              ERASE
+            </span>
+          </li>
+
+          <li className="Console-listItem Console-listItem--tablet">
+            <button className="Console-button">
+              <img
+                className="Console-buttonImage"
+                src={photo}
+                alt=""
+                role="presentation"
+              />
+            </button>
+
+            <span className="Console-label">
+              PHOTO
             </span>
           </li>
 

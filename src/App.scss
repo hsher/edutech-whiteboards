@@ -109,6 +109,20 @@ body {
       and (orientation: portrait) {
         margin: 0 10px;
     }
+
+    &--tablet {
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          display: none;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          display: none;
+      }
+    }
   }
 
   &-subList {
@@ -303,6 +317,22 @@ body {
         right: initial;
         transform: translate(-50%, 0);
         top: 4px;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          display: block;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          display: block;
+      }
     }
   }
 
