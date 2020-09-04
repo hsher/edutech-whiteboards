@@ -35,6 +35,10 @@ body {
     padding: 0 0 2px;
     position: absolute;
     bottom: 100%;
+
+    &.isActive {
+      display: block;
+    }
   }
 
   &-button {

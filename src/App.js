@@ -96,7 +96,7 @@ function App() {
           </li>
 
           <li className="Console-listItem">
-            <button className="Console-button isActive">
+            <button className="Console-button">
               <img
                 className="Console-buttonArrow"
                 src={buttonArrow}
@@ -116,7 +116,7 @@ function App() {
               BOARD
             </span>
 
-            <ul className="Console-subList">
+            <ul className="Console-subList isActive">
               <li className="Console-listItem">
                 <button className="Console-button Console-button--board">
                   JOHN
