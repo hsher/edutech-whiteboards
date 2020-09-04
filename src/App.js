@@ -7,6 +7,7 @@ import draw from './images/draw.svg';
 import board from './images/board.svg';
 import erase from './images/erase.svg';
 import photo from './images/photo.svg';
+import buttonArrow from './images/button_arrow.svg';
 
 function App() {
   return (
@@ -15,6 +16,12 @@ function App() {
         <ul className="Console-list">
           <li className="Console-listItem">
             <button className="Console-button isActive">
+              <img
+                className="Console-buttonArrow"
+                src={buttonArrow}
+                alt=""
+                role="presentation"
+              />
               <img
                 className="Console-buttonImage"
                 src={cursor}
@@ -90,6 +97,13 @@ function App() {
 
           <li className="Console-listItem">
             <button className="Console-button isActive">
+              <img
+                className="Console-buttonArrow"
+                src={buttonArrow}
+                alt=""
+                role="presentation"
+              />
+
               <img
                 className="Console-buttonImage"
                 src={board}
