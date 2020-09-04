@@ -12,18 +12,14 @@ body {
 
 .Console {
   position: fixed;
+  top: 0;
   z-index: 1;
-
-  @media only screen
-    and (max-device-width: 1024px)
-    and (orientation: landscape) {
-      top: 0
-  }
 
   @media only screen
     and (max-device-width: 768px)
     and (orientation: portrait) {
       bottom: 0;
+      top: initial;
   }
 
   @media only screen
@@ -40,16 +36,11 @@ body {
 
   &-list {
     display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0;
     padding: 0 10px;
-
-    @media only screen
-      and (max-device-width: 1024px)
-      and (orientation: landscape) {
-        flex-direction: column;
-        padding: 10px;
-    }
+    padding: 10px;
 
     @media only screen
       and (max-device-width: 768px)
@@ -74,13 +65,8 @@ body {
   }
 
   &-listItem {
+    margin: 10px;
     position: relative;
-
-    @media only screen
-      and (max-device-width: 1024px)
-      and (orientation: landscape) {
-        margin: 10px;
-    }
 
     @media only screen
       and (max-device-width: 768px)
@@ -103,17 +89,12 @@ body {
 
   &-subList {
     display: none;
+    left: 100%;
     list-style: none;
     margin: 0;
+    padding: 0 0 0 5px;
     position: absolute;
-
-    @media only screen
-      and (max-device-width: 1024px)
-      and (orientation: landscape) {
-        top: -10px;
-        left: 100%;
-        padding: 0 0 0 5px;
-    }
+    top: -10px;
 
     @media only screen
       and (max-device-width: 768px)
@@ -121,11 +102,13 @@ body {
         bottom: 100%;
         left: -10px;
         padding: 0 0 2px;
+        top: initial;
     }
 
     @media only screen
       and (max-device-width: 775px)
       and (orientation: landscape) {
+        bottom: initial;
         top: -10px;
         left: 100%;
         padding: 0 0 0 5px;
@@ -137,14 +120,11 @@ body {
         bottom: 100%;
         left: -10px;
         padding: 0 0 2px;
+        top: initial;
     }
 
     &.isActive {
-      @media only screen
-        and (max-device-width: 1024px)
-        and (orientation: landscape) {
-          display: flex;
-      }
+      display: flex;
 
       @media only screen
         and (max-device-width: 768px)
@@ -201,11 +181,7 @@ body {
         color: #41A1EA;
 
         &+ .Console-subList {
-          @media only screen
-            and (max-device-width: 1024px)
-            and (orientation: landscape) {
-              display: flex;
-          }
+          display: flex;
 
           @media only screen
             and (max-device-width: 768px)
@@ -240,19 +216,15 @@ body {
   &-buttonArrow {
     filter: invert(90%) sepia(5%) saturate(1244%) hue-rotate(179deg) brightness(88%) contrast(94%);
     position: absolute;
-
-    @media only screen
-      and (max-device-width: 1024px)
-      and (orientation: landscape) {
-        top: 50%;
-        transform: translate(0, -50%) rotate(90deg);
-        right: 4px;
-    }
+    right: 4px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
 
     @media only screen
       and (max-device-width: 768px)
       and (orientation: portrait) {
         left: 50%;
+        right: initial;
         transform: translate(-50%, 0);
         top: 4px;
     }
@@ -260,6 +232,7 @@ body {
     @media only screen
       and (max-device-width: 775px)
       and (orientation: landscape) {
+        left: initial;
         top: 50%;
         transform: translate(0, -50%) rotate(90deg);
         right: 4px;
@@ -269,6 +242,7 @@ body {
       and (max-device-width: 375px)
       and (orientation: portrait) {
         left: 50%;
+        right: initial;
         transform: translate(-50%, 0);
         top: 4px;
     }
@@ -280,6 +254,7 @@ body {
 
   &-label {
     color: #6C8298;
+    display: none;
     font-family: Campton;
     font-style: normal;
     font-weight: 300;
@@ -289,12 +264,6 @@ body {
     padding: 13px 0;
     text-align: center;
     text-transform: uppercase;
-
-    @media only screen
-      and (max-device-width: 1024px)
-      and (orientation: landscape) {
-        display: none;
-    }
 
     @media only screen
       and (max-device-width: 768px)
