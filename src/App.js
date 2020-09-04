@@ -34,7 +34,7 @@ function App() {
               CURSOR
             </span>
 
-            <ul className="Console-subList">
+            <ul className="Console-subList Console-subList--mobile">
               <li className="Console-listItem">
                 <button className="Console-button">
                   <img

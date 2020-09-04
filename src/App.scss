@@ -23,7 +23,7 @@ body {
   }
 
   @media only screen
-    and (max-device-width: 775px)
+    and (max-device-width: 812px)
     and (orientation: landscape) {
       top: 0
   }
@@ -50,7 +50,7 @@ body {
     }
 
     @media only screen
-      and (max-device-width: 775px)
+      and (max-device-width: 812px)
       and (orientation: landscape) {
         flex-direction: column;
         padding: 10px;
@@ -71,6 +71,20 @@ body {
         and (orientation: portrait) {
           flex-direction: row-reverse;
       }
+
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          flex-direction: column;
+          padding: 10px;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          flex-direction: row;
+          padding: 0 10px;
+      }
     }
   }
 
@@ -85,7 +99,7 @@ body {
     }
 
     @media only screen
-      and (max-device-width: 775px)
+      and (max-device-width: 812px)
       and (orientation: landscape) {
         margin: 10px;
     }
@@ -116,7 +130,7 @@ body {
     }
 
     @media only screen
-      and (max-device-width: 775px)
+      and (max-device-width: 812px)
       and (orientation: landscape) {
         bottom: initial;
         top: -10px;
@@ -143,7 +157,7 @@ body {
       }
 
       @media only screen
-        and (max-device-width: 775px)
+        and (max-device-width: 812px)
         and (orientation: landscape) {
           display: flex;
       }
@@ -152,6 +166,24 @@ body {
         and (max-device-width: 375px)
         and (orientation: portrait) {
           display: block;
+      }
+    }
+
+    &--mobile {
+      &.isActive {
+        display: none;
+
+        @media only screen
+          and (max-device-width: 812px)
+          and (orientation: landscape) {
+            display: flex;
+        }
+
+        @media only screen
+          and (max-device-width: 375px)
+          and (orientation: portrait) {
+            display: block;
+        }
       }
     }
   }
@@ -200,7 +232,7 @@ body {
           }
 
           @media only screen
-            and (max-device-width: 775px)
+            and (max-device-width: 812px)
             and (orientation: landscape) {
               display: flex;
           }
@@ -209,6 +241,22 @@ body {
             and (max-device-width: 375px)
             and (orientation: portrait) {
               display: block;
+          }
+
+          &--mobile {
+            display: none;
+
+            @media only screen
+              and (max-device-width: 812px)
+              and (orientation: landscape) {
+                display: flex;
+            }
+
+            @media only screen
+              and (max-device-width: 375px)
+              and (orientation: portrait) {
+                display: block;
+            }
           }
         }
       }
@@ -240,7 +288,7 @@ body {
     }
 
     @media only screen
-      and (max-device-width: 775px)
+      and (max-device-width: 812px)
       and (orientation: landscape) {
         left: initial;
         top: 50%;
@@ -282,7 +330,7 @@ body {
     }
 
     @media only screen
-      and (max-device-width: 775px)
+      and (max-device-width: 812px)
       and (orientation: landscape) {
         display: none;
     }
