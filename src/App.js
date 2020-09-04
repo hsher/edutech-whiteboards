@@ -48,7 +48,9 @@ function App() {
                 <span className="Console-label">
                   PHOTO
                 </span>
+              </li>
 
+              <li className="Console-listItem">
                 <button className="Console-button">
                   <img
                     className="Console-buttonImage"
@@ -121,7 +123,9 @@ function App() {
                 <button className="Console-button Console-button--board">
                   JOHN
                 </button>
+              </li>
 
+              <li className="Console-listItem">
                 <button className="Console-button Console-button--board">
                   MAIN
                 </button>
