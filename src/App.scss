@@ -15,6 +15,30 @@ body {
   position: fixed;
   z-index: 1;
 
+  @media only screen
+    and (max-device-width: 1024px)
+    and (orientation: landscape) {
+
+  }
+
+  @media only screen
+    and (max-device-width: 768px)
+    and (orientation: portrait) {
+
+  }
+
+  @media only screen
+    and (max-device-width: 775px)
+    and (orientation: landscape) {
+
+  }
+
+  @media only screen
+    and (max-device-width: 375px)
+    and (orientation: portrait) {
+
+  }
+
   &-list {
     display: flex;
     list-style: none;
