@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <div className="Console">
-        <ul className="Console-list">
+        <ul className="Console-list Console-list--main">
           <li className="Console-listItem">
             <button className="Console-button isActive">
               <img
