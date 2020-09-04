@@ -1,0 +1,378 @@
+body {
+  background-color: #E3EDF7;
+  color: #000000;
+  font-size: 14px;
+  height: 100%;
+  line-height: 18px;
+  margin: 0;
+  min-height: 100%;
+  font-family: Helvetica;
+  word-break: break-word;
+}
+
+.Console {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  @media only screen
+    and (max-device-width: 768px)
+    and (orientation: portrait) {
+      bottom: 0;
+      top: initial;
+  }
+
+  @media only screen
+    and (max-device-width: 812px)
+    and (orientation: landscape) {
+      top: 0
+  }
+
+  @media only screen
+    and (max-device-width: 375px)
+    and (orientation: portrait) {
+      bottom: 0;
+      padding: 0 10px;
+      width: 100%;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0 10px;
+    padding: 10px;
+
+    @media only screen
+      and (max-device-width: 768px)
+      and (orientation: portrait) {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+
+    @media only screen
+      and (max-device-width: 812px)
+      and (orientation: landscape) {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    @media only screen
+      and (max-device-width: 375px)
+      and (orientation: portrait) {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+
+    &--main {
+      flex-direction: column-reverse;
+
+      @media only screen
+        and (max-device-width: 768px)
+        and (orientation: portrait) {
+          flex-direction: row-reverse;
+      }
+
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          flex-direction: column;
+          padding: 10px;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0 10px;
+      }
+    }
+  }
+
+  &-listItem {
+    margin: 10px;
+    position: relative;
+
+    @media only screen
+      and (max-device-width: 768px)
+      and (orientation: portrait) {
+        margin: 0 10px;
+    }
+
+    @media only screen
+      and (max-device-width: 812px)
+      and (orientation: landscape) {
+        margin: 10px;
+    }
+
+    @media only screen
+      and (max-device-width: 375px)
+      and (orientation: portrait) {
+        margin: 0;
+    }
+
+    &--tablet {
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          display: none;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          display: none;
+      }
+    }
+  }
+
+  &-subList {
+    display: none;
+    left: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 5px;
+    position: absolute;
+    top: -10px;
+
+    @media only screen
+      and (max-device-width: 768px)
+      and (orientation: portrait) {
+        bottom: 100%;
+        left: -10px;
+        padding: 0 0 2px;
+        top: initial;
+    }
+
+    @media only screen
+      and (max-device-width: 812px)
+      and (orientation: landscape) {
+        bottom: initial;
+        top: -10px;
+        left: 100%;
+        padding: 0 0 0 5px;
+    }
+
+    @media only screen
+      and (max-device-width: 375px)
+      and (orientation: portrait) {
+        bottom: 100%;
+        left: -10px;
+        padding: 0 10px 2px;
+        top: initial;
+    }
+
+    &.isActive {
+      display: flex;
+
+      @media only screen
+        and (max-device-width: 768px)
+        and (orientation: portrait) {
+          display: block;
+      }
+
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          display: flex;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          display: block;
+      }
+    }
+
+    &--mobile {
+      &.isActive {
+        display: none;
+
+        @media only screen
+          and (max-device-width: 812px)
+          and (orientation: landscape) {
+            display: flex;
+        }
+
+        @media only screen
+          and (max-device-width: 375px)
+          and (orientation: portrait) {
+            display: block;
+        }
+      }
+    }
+  }
+
+  &-button {
+    appearance: none;
+    background-color: #E3EDF7;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: -4px -4px 20px rgba(255, 255, 255, 0.85), 4px 4px 20px rgba(188, 205, 220, 0.8);
+    flex: 0 0 70px;
+    height: 70px;
+    padding: 0;
+    width: 70px;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #606287;
+
+
+    &:active,
+    &.isActive {
+      box-shadow: inset -4px -4px 4px rgba(255, 255, 255, 0.65), inset 4px 4px 4px rgba(188, 205, 220, 0.8);
+      color: #41A1EA;
+      font-weight: 600;
+
+      .Console-buttonImage {
+        filter: invert(53%) sepia(90%) saturate(1048%) hue-rotate(180deg) brightness(95%) contrast(92%);
+      }
+
+      &+ .Console-label {
+        color: #41A1EA;
+
+        &+ .Console-subList {
+          display: flex;
+
+          @media only screen
+            and (max-device-width: 768px)
+            and (orientation: portrait) {
+              display: block;
+          }
+
+          @media only screen
+            and (max-device-width: 812px)
+            and (orientation: landscape) {
+              display: flex;
+          }
+
+          @media only screen
+            and (max-device-width: 375px)
+            and (orientation: portrait) {
+              display: block;
+          }
+
+          &--mobile {
+            display: none;
+
+            @media only screen
+              and (max-device-width: 812px)
+              and (orientation: landscape) {
+                display: flex;
+            }
+
+            @media only screen
+              and (max-device-width: 375px)
+              and (orientation: portrait) {
+                display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--board {
+      margin: 0 0 15px;
+    }
+  }
+
+  &-buttonArrow {
+    filter: invert(90%) sepia(5%) saturate(1244%) hue-rotate(179deg) brightness(88%) contrast(94%);
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translate(0, -50%) rotate(90deg);
+
+    @media only screen
+      and (max-device-width: 768px)
+      and (orientation: portrait) {
+        left: 50%;
+        right: initial;
+        transform: translate(-50%, 0);
+        top: 4px;
+    }
+
+    @media only screen
+      and (max-device-width: 812px)
+      and (orientation: landscape) {
+        left: initial;
+        top: 50%;
+        transform: translate(0, -50%) rotate(90deg);
+        right: 4px;
+    }
+
+    @media only screen
+      and (max-device-width: 375px)
+      and (orientation: portrait) {
+        left: 50%;
+        right: initial;
+        transform: translate(-50%, 0);
+        top: 4px;
+    }
+
+    &--mobile {
+      display: none;
+
+      @media only screen
+        and (max-device-width: 812px)
+        and (orientation: landscape) {
+          display: block;
+      }
+
+      @media only screen
+        and (max-device-width: 375px)
+        and (orientation: portrait) {
+          display: block;
+      }
+    }
+  }
+
+  &-buttonImage {
+    filter: invert(69%) sepia(2%) saturate(5185%) hue-rotate(170deg) brightness(72%) contrast(85%);
+  }
+
+  &-label {
+    color: #6C8298;
+    display: none;
+    font-family: Campton;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.05em;
+    padding: 13px 0;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media only screen
+      and (max-device-width: 768px)
+      and (orientation: portrait) {
+        display: block;
+    }
+
+    @media only screen
+      and (max-device-width: 812px)
+      and (orientation: landscape) {
+        display: none;
+    }
+
+    @media only screen
+      and (max-device-width: 375px)
+      and (orientation: portrait) {
+        display: block;
+    }
+  }
+}
